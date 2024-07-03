@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: Cambria, serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #C6D8E2;
+    max-width: none;
+}
+
+/* Estilos para la barra de navegación lateral */
+.sidebar {
+    width: 220px;
+    background-color: #667BAE;
+    padding-top: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #EAEAEA;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    background-color: #959EBD;
+    color: #FFFFFF;
+}
+
+/* Iconos en la barra lateral */
+.sidebar a .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    width: calc(100% - 220px);
+    padding: 40px;
+    transition: width 0.3s;
+}
+
+.main-content-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #C6D8E2;
+    padding: 20px;
+}
+
+.logo-container {
+    background-color: #959EBD;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+}
+
+.logout-container a {
+    background-color: #667BAE;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #EAEAEA;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-container a:hover {
+    background-color: #4C5D8A;
+    color: #FFFFFF;
+}
+
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
+
+#chart {
+    max-width: 100%;
+    height: auto; /* Mantener la altura automática para ajustar proporcionalmente */
+    display: block; /* Asegura que el canvas sea un bloque para evitar problemas de alineación */
+    box-sizing: border-box; /* Asegura que el tamaño incluya el borde y el padding */
+    border: 1px solid #ccc; /* Borde opcional para visualización */
+}
+
+@media (max-width: 768px) {
+    .mi-div {
+        /* Ajustes específicos para pantallas pequeñas */
+        padding: 5px;
+    }
+    .mi-div h3 {
+        font-size: 25px;
+    }
+    .mi-div canvas {
+        /* Ajustes específicos para el canvas en pantallas pequeñas */
+        width: 100%;
+        height: 300px;
+    }
+}

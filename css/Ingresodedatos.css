@@ -1,0 +1,292 @@
+/* Estilos generales */
+body {
+    font-family: Cambria, serif;
+    margin: 0;
+}
+
+/* Agrega estas reglas para que el contenido esté centrado horizontalmente */
+.header-content, .login-form {
+    width: 100%;
+    max-width: 1200px; /* O el ancho deseado */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+/* Estilos del encabezado */
+#header-section {
+    background-color: #ABABBA;
+    padding: 15px;
+}
+
+/* Estilos del logo */
+.logo-link {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.logo-link img {
+    margin-right: 15px; /* Ajusta el margen derecho entre la imagen y el texto */
+}
+
+/* Estilos del título */
+.company-name {
+    color: white;
+    font-size: 55px;
+}
+
+/* Estilos del encabezado */
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos del título */
+.title {
+    font-size: 45px;
+    text-align: center; /* Centra el texto */
+    margin-top: 15px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+/* Estilos de los formularios */
+.form-group {
+    margin-bottom: 18px; /* Añade espacio entre cada grupo de formularios */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 60%; /* Ajustar el ancho de los campos de entrada */
+    margin: 0 auto; /* Centrar horizontalmente */
+    height: 40px; /* Establecer una altura fija */
+}
+
+.input-group .form-control {
+    height: 100%; /* Hacer que el campo de entrada ocupe el 100% de la altura del grupo */
+}
+
+/* CSS para los íconos de los campos de entrada */
+
+.input-group-prepend {
+    display: flex;
+    align-items: center;
+}
+
+.input-group-prepend .input-group-text {
+    height: 100%; /* Hacer que el texto del grupo ocupe el 100% de la altura del grupo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Eliminar el borde por defecto */
+    background-color: #DADADA; /* Color de fondo de los íconos */
+    border-radius: 4px;
+    padding: 10px 10px; /* Añadir padding para el contenido */
+}
+
+.input-group-prepend svg {
+    height: 20px; /* Tamaño del ícono */
+    width: 20px;
+    fill: #000; /* Color del ícono */
+}
+
+/*CSS para el botón del ojo*/
+
+.input-group-append {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Cambiar el cursor a un puntero */
+}
+
+.input-group-append .input-group-text {
+    height: 100%; /* Hacer que el texto del grupo ocupe el 100% de la altura del grupo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Eliminar el borde por defecto */
+    background-color: #ABABAB; /* Color de fondo del botón */
+    border-radius: 4px;
+    padding: 0px 0px; /* Añadir padding para el contenido */
+}
+
+/* Estilo de hover para la sección "Olvidé mi contraseña" */
+.input-group-append:hover{
+    color: white; /* Cambio de color de texto en hover */
+}
+
+.input-group-append svg {
+    height: 20px;
+    width: 20px; /* Ajustar el tamaño del icono */
+    fill: #fff; /* Color del ícono */
+}
+
+.input-group-append svg:hover {
+    background-color: #c0bbcc; /* Cambio de color de fondo en hover */
+}
+
+
+.submit-button {
+    width: 60%; /* Ajustar el ancho del botón */
+    margin: 20px auto; /* Centrar horizontalmente y agregar espacio superior e inferior */
+    height: 50px; /* Establecer una altura fija */
+}
+
+/* Línea divisoria */
+.line-divider {
+    border: 5px;
+    height: 10px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+    margin: 20px 0;
+}
+
+/* Estilos para el enlace "Olvidé mi contraseña" */
+.forgot-password-link {
+    font-size: 20px;
+}
+
+/* Estilos para los campos de entrada */
+.input-group {
+    width: 50%; /* Ajustar el ancho de los campos de entrada */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para el ojo abierto y cerrado */
+.input-group-append {
+    cursor: pointer; /* Cambiar el cursor a un puntero */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de mostrar/ocultar contraseña */
+.input-group-append svg {
+    height: 100%;
+    width: 40px; /* Ancho del botón */
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #ABABAB; /* Color de fondo del botón */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo del ícono del ojo */
+.input-group-append svg path {
+    fill: #fff; /* Color del ícono */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo del botón de mostrar/ocultar contraseña en hover */
+.input-group-append svg:hover {
+    background-color: #c0bbcc; /* Cambio de color de fondo en hover */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón "Iniciar Sesión" */
+.login-form .submit-button {
+    width: 50%; /* Ajustar el ancho del botón */
+    margin: 1px auto; /* Centrar horizontalmente y agregar espacio superior e inferior */
+}
+
+
+/* Estilo para el botón "Iniciar Sesión" */
+.form-group input[type="submit"] {
+    display: inline-block; /* Convertir en línea para aplicar estilos de botón */
+    padding: 8px 16px; /* Espaciado interno */
+    margin: 0px; /* Margen exterior */
+    border: none; /* Quitar el borde */
+    border-radius: 4px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    color: #ABABAB; /* Color del texto */
+    background-color: white; /* Color de fondo del botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+/* Estilo de hover para el botón */
+.form-group input[type="submit"]:hover {
+    background-color: #c0bbcc; /* Cambio de color de fondo en hover */
+    color: white;
+}
+
+/* Estilos para el contenedor de los elementos */
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas adicionales si no caben */
+    margin-bottom: 20px; /* Añade espacio en la parte inferior */
+}
+
+/* Estilos para el contenedor del enlace "Olvidé mi contraseña" */
+.password-link-container {
+    margin-right: 40px; /* Espacio a la derecha */
+}
+
+/* Estilos para el enlace "Olvidé mi contraseña" */
+.password-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: #B0E0E6; /* Color del texto */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+/* Estilo de hover para el enlace "Olvidé mi contraseña" */
+.password-link:hover {
+    color: white; /* Cambio de color en hover */
+}
+
+/* Estilos para el botón de "Ingresar" */
+.submit-button {
+    width: 200px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #fff; /* Color del texto */
+    background-color: #ABABAB; /* Color de fondo */
+    border: none; /* Quitar el borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilo de hover para el botón de "Ingresar" */
+.submit-button:hover {
+    background-color: white; /* Cambio de color de fondo en hover */
+}
+
+
+/* Estilo para el texto "Iniciar Sesión" */
+.submit-button {
+    font-size: 24px; /* Ajusta el tamaño de letra según sea necesario */
+}
+
+@media (max-width: 1060px) {
+    .login-form .submit-button {
+        width: 70%; /* Ajustar el ancho del botón */
+        margin: 1px auto; /* Centrar horizontalmente y agregar espacio superior e inferior */
+    }
+
+    .input-group {
+        width: 70%; /* Ajustar el ancho de los campos de entrada */
+        margin: 0 auto; /* Centrar horizontalmente */
+    }
+}
+
+/* Estilos para la primera sección */
+#main-content {
+    text-align: center;
+    margin: 10px;
+    background-color: #959EBD;
+    padding: 20px;
+}
+
+/* Estilos para la segunda sección */
+#tech-company-section {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media query para cambiar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Cambia la dirección de flexión a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+}
+
