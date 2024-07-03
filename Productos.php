@@ -26,8 +26,8 @@
                 <li><a href="Clientes.php"><i class="bi bi-box-seam icon"></i>Clientes</a></li>
                 <li><a href="Productos.php" style="background-color: #959EBD"><i class="bi bi-phone-vibrate icon"></i>Productos</a></li>
                 <li><a href="Caja.php"><i class="bi bi-graph-up icon"></i>Caja</a></li>
-                <li><a href="AyudaSoporte.php"><i class="bi bi-question-circle icon"></i>Ayuda y Soporte</a></li>
-                <li><a href="ConfigPerfil.php"><i class="bi bi-gear icon"></i>Configuración de Perfil</a></li>
+                <li><a href="historial.php"><i class="bi bi-question-circle icon"></i>Historial</a></li>
+                <li><a href="AyudaSoporte.php"><i class="bi bi-gear icon"></i>Ayuda y Soporte</a></li>
             </ul>
         </nav>
         <main class="main-content">
