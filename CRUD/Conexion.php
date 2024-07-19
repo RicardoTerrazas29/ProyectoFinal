@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "TechcompanyDB";
-$port = 3309;
+$port = 3306;
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database, $port);
