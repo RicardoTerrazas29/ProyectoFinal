@@ -76,6 +76,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Cliente</th> <!-- Nueva columna -->
                                 <th>Descripción</th>
                                 <th>Cantidad</th>
                                 <th>Precio</th>
@@ -107,6 +108,8 @@
                 var productoId = $('#producto').val();
                 var productoTexto = $('#producto option:selected').text();
                 var cantidad = $('#cantidad').val();
+                var clienteId = $('#cliente').val();
+                var clienteTexto = $('#cliente option:selected').text();
                 
                 // Obtener el precio del producto desde el array de productos
                 var precio = 0;
@@ -121,6 +124,7 @@
                 $('#tablaProductos tbody').append(
                     '<tr>' +
                     '<td>' + productoId + '</td>' +
+                    '<td>' + clienteTexto + '</td>' + <!-- Nueva celda -->
                     '<td>' + productoTexto + '</td>' +
                     '<td>' + cantidad + '</td>' +
                     '<td>' + precio + '</td>' +
@@ -146,10 +150,11 @@
                 $('#tablaProductos tbody tr').each(function() {
                     var producto = {
                         id: $(this).find('td:eq(0)').text(),
-                        descripcion: $(this).find('td:eq(1)').text(),
-                        cantidad: $(this).find('td:eq(2)').text(),
-                        precio: $(this).find('td:eq(3)').text(),
-                        total: $(this).find('td:eq(4)').text()
+                        cliente: $(this).find('td:eq(1)').text(), <!-- Nuevo campo -->
+                        descripcion: $(this).find('td:eq(2)').text(),
+                        cantidad: $(this).find('td:eq(3)').text(),
+                        precio: $(this).find('td:eq(4)').text(),
+                        total: $(this).find('td:eq(5)').text()
                     };
                     productos.push(producto);
                 });
@@ -159,7 +164,7 @@
             function actualizarTotal() {
                 var total = 0;
                 $('#tablaProductos tbody tr').each(function() {
-                    var totalProducto = parseFloat($(this).find('td:eq(4)').text());
+                    var totalProducto = parseFloat($(this).find('td:eq(5)').text());
                     total += totalProducto;
                 });
                 $('#totalVenta').text(total);
@@ -168,5 +173,3 @@
     </script>
 </body>
 </html>
-
-
